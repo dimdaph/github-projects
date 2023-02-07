@@ -40,7 +40,7 @@ nav ul {
 }
 
 header {
-
+    padding: 30px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,4 +126,124 @@ footer h3 {
 .list-logo img {
     /* permet de réduire un peu la taille des images */
     height: 60px;
+}
+
+/********************************************* MEDIA QUERRIES ************************************/
+@media screen and (max-width:890px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    /* passe header-left et header-right en block l'un en dessous de l'autre */
+    header {
+        display: block;
+    }
+
+    /* permet de centrer le block horizontalement */
+    .header-left {
+        margin: 0 auto;
+        /* permet de centrer le texte */
+        text-align: center;
+        width: 70%;
+    }
+
+    .header-left h3 {
+        font-size: 1.5rem;
+    }
+
+    /* permet de centrer le block horizontalement */
+    .header-right {
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width:750px) {
+
+    /* passe footer-left et footer-right en block l'un en dessous de l'autre */
+    footer {
+        display: block;
+    }
+
+    /* permet de centrer le block horizontalement */
+    .footer-left {
+        margin: 0 auto;
+        text-align: center;
+        width: 50%;
+    }
+
+    /* permet de centrer le block horizontalement */
+    .footer-right {
+        margin: 0 auto;
+        padding-top: 20px;
+        /* permet de centrer le texte */
+        text-align: center;
+    }
+
+    /* permet de réduire la taille des logos */
+    .list-logo img {
+        height: 30px;
+    }
+
+    /* permet de réajuster la taille du conteneur des logos */
+    .list-logo ul {
+        height: 50px;
+    }
+
+    .list-btn {
+        /* permet de centrer les buttons ligne par ligne */
+        display: inline;
+    }
+}
+
+@media screen and (max-width:560px) {
+    nav {
+        font-size: 0.8rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    footer h3 {
+        font-size: 0.8rem;
+    }
+
+    .header-left h3 {
+        font-size: 1.2rem;
+    }
+
+    .header-left p {
+        font-size: 0.7rem;
+    }
+
+    .list-btn button {
+        padding: 5px 10px;
+        /* margin permet de définir la marge haut bas et droite gauche afin que les bouttons ne se décale pas surtout sur les côtés */
+        width: 130px;
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width:430px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .header-left h3 {
+        font-size: 1rem;
+    }
+
+    /* permet d'avoir ul de nav plus espacé */
+    nav ul {
+        width: 60%;
+    }
+
+    .footer-left {
+        width: 80%;
+    }
+
+    .list-logo img {
+        height: 20px;
+    }
 }
