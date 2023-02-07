@@ -1,0 +1,263 @@
+/****************************** POLICE *****************************************/
+@font-face {
+    font-family: "Montserrat";
+    src: url(./fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+/****************************** PARAMETRES GENERAUX ********************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+/**************************************** NAVBAR ********************************/
+nav ul {
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    margin: 0 auto;
+}
+
+nav ul li {
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+/* permet de créer le before au premier enfant de ul */
+nav li:first-child:before {
+    content: "";
+    width: 100%;
+    height: 5px;
+    background: rgba(76, 24, 199, 0.863);
+    position: absolute;
+    transform: translatey(-20px);
+}
+
+/* permet d'afficher un before aux autres éléments lorsqu'on les survoles */
+nav li:hover:before {
+    content: "";
+    width: 100%;
+    height: 5px;
+    background: rgba(76, 24, 199, 0.863);
+    position: absolute;
+    transform: translatey(-20px);
+}
+
+/* permet de ne pas afficher le before sur le dernier enfant de ul */
+nav li:last-child:before {
+    background: none;
+}
+
+/* création du style fr | en */
+#language {
+    border: none;
+    background: rgb(216, 216, 216);
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+/******************************************** HEADER ******************************************/
+h1 {
+    color: white;
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 30px 0;
+}
+
+header {
+    padding: 140px 0;
+    background: url(./img/bg.jpg) fixed center/cover;
+    text-align: center;
+}
+
+.header-btn {
+    background: transparent;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+    border: 1px solid white;
+    text-transform: uppercase;
+    padding: 15px 30px;
+}
+
+/***************************** HEADER TEXT ******************************************************/
+.header-text {
+    /* permet de centrer le paragraphe dans la boite car il est enfant unique */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    max-width: 1100px;
+    margin: 0 auto;
+    height: 150px;
+}
+
+/******************************** SECTION PART LOGO ******************************************/
+.section-logo {
+    background: black;
+    color: white;
+    /* permet d'aérer */
+    padding: 60px 0;
+}
+
+.container-list {
+    max-width: 1100px;
+    display: flex;
+    /* centre horizontalement */
+    margin: 0 auto;
+}
+
+.section-logo h3 {
+    text-transform: uppercase;
+    /* permet d'aérer */
+    padding-top: 20px;
+}
+
+.section-logo p {
+
+    font-size: 0.9rem;
+    /* délimite la largeur du paragraphe et espace haut et bas pour aérer */
+    padding: 20px 50px;
+
+}
+
+.list-logo {
+    /* centre tous les élements dans la boite horizontalement */
+    text-align: center;
+}
+
+.btn {
+    background: transparent;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+    border: 1px solid white;
+    text-transform: uppercase;
+    padding: 15px 30px;
+}
+
+/************************** SECTION NEWS ***************************************/
+.section-news {
+    background: whitesmoke;
+    padding: 60px 0;
+}
+
+.header-news {
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.header-news-left {
+    text-transform: uppercase;
+}
+
+.header-news-left p {
+    font-size: 0.8rem;
+}
+
+.header-news .btn {
+    color: black;
+    border: 1px solid black;
+}
+
+.container-news {
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    /* centre à l'horizontale */
+    margin: 0 auto;
+}
+
+.list-news {
+    width: 23%;
+    position: relative;
+}
+
+.list-news h4 {
+    margin: 15px 0;
+}
+
+.list-news p {
+    margin-bottom: 40px;
+    font-size: 0.9rem;
+}
+
+/* ajuste l'image à la taille de son parent */
+.img-news {
+    bor
+}
+
+.img-news img {
+    object-fit: cover;
+    box-shadow: 0px 2px 12px 0px;
+    border-radius: 3px;
+}
+
+.link {
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    bottom: 0;
+}
+
+/***************************** SECTION CONTACT ****************************/
+.container-contact {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.list-contact img {
+    display: block;
+    margin: 0 auto;
+}
+
+.list-contact {
+    text-align: left;
+    width: 25%;
+
+}
+
+.list-contact ul li {
+    margin: 5px 0;
+}
+
+.list-contact h5 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.list-contact p {
+    font-size: 0.8rem;
+    width: 70%;
+    line-height: 20px;
+
+}
+
+.socials-networks {
+    margin: 10px 0;
+}
