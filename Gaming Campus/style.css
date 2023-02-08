@@ -70,6 +70,10 @@ nav li:last-child:before {
 }
 
 /******************************************** HEADER ******************************************/
+.arrow {
+    transform: translateX(10px);
+}
+
 h1 {
     color: white;
     font-size: 3rem;
@@ -92,6 +96,13 @@ header {
     border: 1px solid white;
     text-transform: uppercase;
     padding: 15px 30px;
+    cursor: pointer;
+}
+
+.header-btn:hover {
+    background: whitesmoke;
+    color: black;
+    transition: 0.7s;
 }
 
 /***************************** HEADER TEXT ******************************************************/
@@ -151,6 +162,13 @@ header {
     border: 1px solid white;
     text-transform: uppercase;
     padding: 15px 30px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: whitesmoke;
+    color: black;
+    transition: 0.7s;
 }
 
 /************************** SECTION NEWS ***************************************/
@@ -180,6 +198,12 @@ header {
 .header-news .btn {
     color: black;
     border: 1px solid black;
+}
+
+.header-news .btn:hover {
+    background: black;
+    color: white;
+    opacity: 0.8;
 }
 
 .container-news {
@@ -220,14 +244,28 @@ header {
     text-transform: uppercase;
     font-size: 0.8rem;
     bottom: 0;
+    font-size: 0.7rem;
+    font-weight: 700;
 }
 
 /***************************** SECTION CONTACT ****************************/
+
+.container-contact:after {
+    content: "";
+    width: 60%;
+    height: 1px;
+    background: rgb(197, 197, 197);
+    position: absolute;
+    bottom: 0;
+}
+
 .container-contact {
     display: flex;
     justify-content: space-around;
-    max-width: 1100px;
+    max-width: 1260px;
     margin: 0 auto;
+    padding: 65px 0;
+    position: relative;
 }
 
 .list-contact img {
@@ -239,6 +277,11 @@ header {
     text-align: left;
     width: 25%;
 
+}
+
+.list-contact a {
+    font-size: 0.7rem;
+    font-weight: 700;
 }
 
 .list-contact ul li {
@@ -265,6 +308,42 @@ header {
 /***************************SECTION PARTNER ******************************/
 
 
+
+.container-partner {
+
+    margin: 0 auto;
+    max-width: 1100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 65px 0;
+}
+
+.partner-left h4 {
+    text-transform: uppercase;
+
+}
+
+.partner-left p {
+    font-size: 0.8rem;
+}
+
+.partner-right {
+    width: 70%;
+}
+
+.partner-right ul {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.partner-right ul li img {
+    height: 15px;
+}
+
+
 /************************* FOOTER ****************************************/
 footer {
     padding: 20px 0;
@@ -286,6 +365,5 @@ footer h3 {
 .footer-container ul {
     display: flex;
     justify-content: space-between;
-
-
+    align-items: center;
 }
